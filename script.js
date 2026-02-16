@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 4. WHATSAPP BOOKING & FORM RESET ---
     // IMPORTANT: Replace with actual number
-    const salonPhoneNumber = "2348000000000";
+    const salonPhoneNumber = "+234 706 5959 183";
 
     const form = document.getElementById('whatsappForm');
     const toast = document.getElementById('toast');
