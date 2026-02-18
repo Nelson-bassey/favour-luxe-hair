@@ -596,6 +596,10 @@
     .about-img {
       margin-bottom: 1.875rem;
     }
+    .btn-gold {
+      background-color: var(--primary-gold);
+      color: #fff;
+      width: 70%;
   }
 
   @media (max-width: 768px) {
@@ -649,3 +653,4 @@
       letter-spacing: normal !important;
     }
   }
+}
