@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- MOBILE THEME COLOR (SEO & UX) -->
+    <meta name="theme-color" content="#d4af37" />
+    <meta name="msapplication-TileColor" content="#d4af37" />
 
-    <!-- Primary Meta Tags -->
+    <!-- PRIMARY SEO META TAGS -->
     <title>
       Favour Luxe Hair & Beauty | Luxury Hair Salon & Braids in Calabar
     </title>
     <meta
       name="description"
-      content="Favour Luxe Hair & Beauty in Calabar offers luxury braids, weaves, silk press, custom wigs, and professional hair styling. Book your appointment via WhatsApp today."
+      content="Premier hair salon in Calabar specializing in luxury braids, weaves, silk press, and custom wigs. Book your appointment at Favour Luxe Hair & Beauty today. Professional styling for all hair types."
     />
+
+    <!-- goggle console verification  -->
+    <meta name="google-site-verification" content="4fkb0u0K_qFlimfPC9-9DzTRVugj8jGBMYUs1OkY0Ic" />
     <meta
       name="keywords"
-      content="Hair Salon Calabar, Luxury Hair, Braids, Weaves, Silk Press, Wig Making, Hair Stylist Calabar, Favour Luxe Hair & Beauty, Luxury Hair Salon Calabar"
+      content="Hair Salon Calabar, Braids Calabar, Weave Install, Silk Press, Wig Making, Favour Luxe, Luxury Beauty Salon, Best Stylist Calabar, Knotless Braids"
     />
     <meta name="author" content="Favour Luxe Hair & Beauty" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://favour-luxe-hair.vercel.app/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- OPEN GRAPH / FACEBOOK (Social Sharing) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://favour-luxe-hair.vercel.app/" />
     <meta
@@ -29,18 +36,15 @@
     />
     <meta
       property="og:description"
-      content="Luxury hair braids, weaves, silk press, and custom wigs in Calabar. Professional hair styling for every occasion. Book via WhatsApp today!"
+      content="Experience luxury hair care in Calabar. Braids, weaves, and custom wigs. Book via WhatsApp today!"
     />
     <meta
       property="og:image"
       content="https://picsum.photos/seed/luxuryhair/1200/630"
     />
-    <meta
-      property="og:image:alt"
-      content="Favour Luxe Hair & Beauty Salon in Calabar"
-    />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card -->
+    <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://favour-luxe-hair.vercel.app/" />
     <meta
@@ -49,28 +53,31 @@
     />
     <meta
       name="twitter:description"
-      content="Luxury braids, weaves, silk press, and custom wigs in Calabar. Professional hair styling for every occasion. Book via WhatsApp today!"
+      content="Luxury braids, weaves, silk press, and custom wigs in Calabar. Book via WhatsApp today!"
     />
     <meta
       name="twitter:image"
       content="https://picsum.photos/seed/luxuryhair/1200/630"
     />
-    <meta
-      name="twitter:image:alt"
-      content="Favour Luxe Hair & Beauty Salon in Calabar"
-    />
 
-    <!-- Favicon (Optional but recommended) -->
+    <!-- FAVICON -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-    <!-- Structured Data (JSON-LD for Local Business SEO) -->
+    <!-- font awesome cdn links for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- --- STRUCTURED DATA (SCHEMA.ORG) FOR GOOGLE --- -->
+    
+    <!-- 1. LOCAL BUSINESS SCHEMA (Crucial for Local SEO/Maps) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BeautySalon",
         "name": "Favour Luxe Hair & Beauty",
         "image": "https://picsum.photos/seed/luxuryhair/1200/630",
-        "@id": "https://favour-luxe-hair.vercel.app/",
+        "@id": "https://favourluxehair.vercel.app/",
         "url": "https://favour-luxe-hair.vercel.app/",
         "telephone": "+2347065959183",
         "priceRange": "$$",
@@ -79,13 +86,17 @@
           "streetAddress": "No. 3 Eastern Highway",
           "addressLocality": "Calabar",
           "addressRegion": "Cross River State",
-          "postalCode": "",
+          "postalCode": "540101",
           "addressCountry": "NG"
         },
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": 4.95,
           "longitude": 8.325
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Calabar"
         },
         "openingHoursSpecification": [
           {
@@ -109,21 +120,50 @@
       }
     </script>
 
-    <!-- Fonts & Icons -->
+    <!-- 2. BREADCRUMB SCHEMA (Helps Google understand page structure) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://favour-luxe-hair.vercel.app/#home"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://favour-luxe-hair.vercel.app/#about"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Services",
+            "item": "https://favour-luxe-hair.vercel.app/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Book Now",
+            "item": "https://favour-luxe-hair.vercel.app/#booking"
+          }
+        ]
+      }
+    </script>
+
+    <!-- FONTS & ICONS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <!-- PRELOADER (Set to 3s in JS) -->
+    <!-- PRELOADER -->
     <div id="preloader">
       <div class="loader-content">
         <div class="loader-logo">Favour Luxe Hair & Beauty</div>
@@ -134,8 +174,8 @@
     <!-- NAV BAR -->
     <header id="header">
       <div class="container">
-        <nav>
-          <a href="#home"
+        <nav role="navigation" aria-label="Main Navigation">
+          <a href="#home" aria-label="Favour Luxe Home"
             ><div class="logo">Favour Luxe <span>Hair & Beauty</span></div></a
           >
           <ul class="nav-links">
@@ -144,9 +184,11 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#booking" class="gold-text">Book Now</a></li>
           </ul>
-          <div class="hamburger">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
+          <!-- HAMBURGER MENU ICONS -->
+          <div class="hamburger" aria-label="Toggle Menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
       </div>
@@ -174,23 +216,23 @@
           <div class="about-img reveal reveal-left">
             <img
               src="images/hair dresser at work.jpg"
-              alt="Hair Stylist at Work"
+              alt="Professional hair stylist working on a client in Calabar"
             />
           </div>
           <div class="about-text reveal reveal-right">
             <h2 class="section-title">Who We Are</h2>
-            <p style="margin-bottom: 20px">
+            <p style="margin-bottom: 1.25rem">
               Located in the heart of <strong>Calabar</strong>, Favour Luxe Hair
               & Beauty is the destination for luxury hair making. We believe
               that your hair is your crown, and we treat it with royalty.
             </p>
-            <p style="margin-bottom: 30px">
+            <p style="margin-bottom: 1.875rem">
               From intricate knotless braids to sleek silk presses, our stylists
               are trained to deliver perfection. We create an atmosphere of
               relaxation and style, ensuring you leave feeling beautiful and
               confident.
             </p>
-            <div style="display: flex; gap: 20px">
+            <div style="display: flex; gap: 1.25rem">
               <div>
                 <h3 class="gold-text">100%</h3>
                 <p>Quality Hair</p>
@@ -220,9 +262,6 @@
         <div class="services-grid">
           <!-- Service 1 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                        <img src="https://picsum.photos/seed/boxbraids/400/300" alt="Box Braids">
-                    </div> -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-cut"></i></span>
               <h3>Protective Braids</h3>
@@ -234,9 +273,6 @@
           </div>
           <!-- Service 2 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                         <img src="https://picsum.photos/seed/weavehair/400/300" alt="Luxury Weave"> 
-                    </div>  -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-gem"></i></span>
               <h3>Luxury Weaves</h3>
@@ -248,9 +284,6 @@
           </div>
           <!-- Service 3 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                        <img src="https://picsum.photos/seed/hairtreatment/400/300" alt="Hair Treatment">
-                    </div> -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-spa"></i></span>
               <h3>Hair Revival</h3>
@@ -262,9 +295,6 @@
           </div>
           <!-- Service 4 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                        <img src="https://picsum.photos/seed/curlyhair/400/300" alt="Styling">
-                    </div> -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-magic"></i></span>
               <h3>Styling & Curls</h3>
@@ -276,9 +306,6 @@
           </div>
           <!-- Service 5 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                        <img src="https://picsum.photos/seed/wigmaking/400/300" alt="Wig Making">
-                    </div> -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-crown"></i></span>
               <h3>Custom Wigs</h3>
@@ -290,9 +317,6 @@
           </div>
           <!-- Service 6 -->
           <div class="service-card reveal reveal-up">
-            <!-- <div class="service-img-container">
-                        <img src="https://picsum.photos/seed/bridalhair/400/300" alt="Bridal">
-                    </div> -->
             <div class="service-info">
               <span class="service-icon"><i class="fas fa-star"></i></span>
               <h3>Bridal & Events</h3>
@@ -312,12 +336,12 @@
           <!-- Info Side -->
           <div class="booking-info">
             <div class="booking-bg-image">
-              <img src="images/book session.jpg" alt="Background" />
+              <img src="images/book session.jpg" alt="Interior of Favour Luxe Hair Salon in Calabar" />
             </div>
 
             <div class="booking-info-content reveal reveal-left">
               <h3>Book Your Session</h3>
-              <p style="margin-bottom: 30px; opacity: 0.9">
+              <p style="margin-bottom: 1.875rem; opacity: 0.9">
                 Ready for a transformation? Fill out the form to book directly
                 on WhatsApp. We are currently accepting bookings for clients in
                 <strong>Calabar only</strong>.
@@ -379,28 +403,12 @@
                   <option value="Evening">Evening (3PM - 6PM)</option>
                 </select>
               </div>
-              <!-- 
-                        <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
-                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
-                            <a href="https://wa.me/0706 5959 183">Send to WhatsApp</a>
-                        </button> -->
 
-              <a
-                href="https://wa.me/2347065959183"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-whatsapp"
-                style="
-                  width: 100%;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 10px;
-                "
-              >
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-whatsapp">
                 <i class="fab fa-whatsapp"></i>
                 Send to WhatsApp
-              </a>
+              </button>
             </form>
           </div>
         </div>
@@ -420,23 +428,25 @@
               styling services.
             </p>
             <div class="footer-social">
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a
                 href="https://www.facebook.com/favour.odey986"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Facebook"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a
                 href="https://www.tiktok.com/@favourodey8"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="TikTok"
                 ><i class="fab fa-tiktok"></i
               ></a>
             </div>
           </div>
           <div>
-            <h4 style="color: #fff; margin-bottom: 20px">Quick Links</h4>
+            <h4 style="color: #fff; margin-bottom: 1.25rem">Quick Links</h4>
             <ul style="line-height: 2">
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -444,7 +454,7 @@
             </ul>
           </div>
           <div>
-            <h4 style="color: #fff; margin-bottom: 20px">Visit Us</h4>
+            <h4 style="color: #fff; margin-bottom: 1.25rem">Visit Us</h4>
             <p style="line-height: 2">
               Favour Luxe Hair & Beauty Salon<br />
               [No. 3 Eastern Highway]<br />
@@ -464,8 +474,7 @@
       <i class="fas fa-check-circle" style="color: #4caf50"></i>
       <span>Opening WhatsApp...</span>
     </div>
-
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
   </body>
 </html>
+
